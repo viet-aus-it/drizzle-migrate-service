@@ -1,0 +1,37 @@
+{
+  "version": "6",
+  "dialect": "mysql",
+  "id": "f53fa286-2cc2-485b-8b49-f416015f3249",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "name": "User",
+      "entityType": "tables"
+    },
+    {
+      "type": "varchar(191)",
+      "notNull": true,
+      "autoIncrement": false,
+      "default": null,
+      "onUpdateNow": false,
+      "onUpdateNowFsp": null,
+      "charSet": null,
+      "collation": null,
+      "generated": null,
+      "name": "id",
+      "entityType": "columns",
+      "table": "User"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "name": "PRIMARY",
+      "table": "User",
+      "entityType": "pks"
+    }
+  ],
+  "renames": []
+}
