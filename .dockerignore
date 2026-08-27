@@ -10,3 +10,4 @@ Thumbs.db
 Dockerfile
 node_modules
 *.md
+examples
