@@ -1,3 +1,4 @@
+allowBuilds:
+  esbuild: true
 onlyBuiltDependencies:
-  - '@prisma/engines'
-  - prisma
+  - esbuild

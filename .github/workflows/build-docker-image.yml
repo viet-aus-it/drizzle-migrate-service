@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-discord-bot:
-    name: Build Prisma Migrate Docker Image
+    name: Build Drizzle Migrate Docker Image
     runs-on: ubuntu-latest
 
     steps:
@@ -18,7 +18,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/viet-aus-it/prisma-migrate-service
+          images: ghcr.io/viet-aus-it/drizzle-migrate-service
           tags: |
             type=raw,latest
             type=sha

@@ -1,23 +1,26 @@
 {
-  "name": "@ivet-aus-it/db-migrate-service",
-  "version": "2.0.0",
-  "description": "DB Migration Service using Prisma 6",
+  "name": "@viet-aus-it/drizzle-migrate-service",
+  "version": "1.0.0",
+  "description": "DB Migration Service using Drizzle",
   "engines": {
-    "node": "^22.0.0",
-    "pnpm": "^10.0.0"
+    "node": "^24.0.0",
+    "pnpm": "^11.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/viet-aus-it/prisma-migrate-service.git"
+    "url": "git+https://github.com/viet-aus-it/drizzle-migrate-service.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/viet-aus-it/prisma-migrate-service"
+    "url": "https://github.com/viet-aus-it/drizzle-migrate-service"
   },
   "scripts": {
-    "prisma:deploy": "prisma migrate deploy"
+    "drizzle:migrate": "drizzle-kit migrate"
   },
   "devDependencies": {
-    "prisma": "^7.0.0"
+    "drizzle-kit": "^1.0.0-rc.4",
+    "drizzle-orm": "^1.0.0-rc.4",
+    "mysql2": "^3.24.2",
+    "pg": "^8.23.0"
   }
 }

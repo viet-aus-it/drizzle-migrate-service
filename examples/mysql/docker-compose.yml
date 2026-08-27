@@ -8,10 +8,11 @@ services:
       - 3306:3306
 
   db-deploy:
-    image: ghcr.io/viet-aus-it/prisma-migrate-service
+    image: ghcr.io/viet-aus-it/drizzle-migrate-service
     depends_on:
       - db
     env_file: ".env"
     container_name: test_db_deploy_pg
     volumes:
-      - ./prisma:/src/prisma
+      - ./drizzle:/src/drizzle
+      - ./drizzle.config.ts:/src/drizzle.config.ts
