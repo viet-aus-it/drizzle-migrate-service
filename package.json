@@ -1,0 +1,23 @@
+{
+  "name": "@ivet-aus-it/db-migrate-service",
+  "version": "2.0.0",
+  "description": "DB Migration Service using Prisma 6",
+  "engines": {
+    "node": "^22.0.0",
+    "pnpm": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viet-aus-it/prisma-migrate-service.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viet-aus-it/prisma-migrate-service"
+  },
+  "scripts": {
+    "prisma:deploy": "prisma migrate deploy"
+  },
+  "devDependencies": {
+    "prisma": "^7.0.0"
+  }
+}
